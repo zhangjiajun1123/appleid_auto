@@ -35,7 +35,7 @@ Selenium Grid需要一个中心控制器（Hub），并允许在多台服务器�
 ## 一键部署后端
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/pplulee/appleid_auto/main/backend/install_unblocker.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/pplulee/appleid_auto/backend/backend/install_unblocker.sh)
 ```
 
 安装时按照提示输入参数即可。\
