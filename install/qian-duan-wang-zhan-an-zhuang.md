@@ -25,7 +25,7 @@
     ENABLE_PROXY_POOL = false
     # 当后端报告代理不可用时，是否自动禁用该代理
     PROXY_AUTO_DISABLE = false
-    # 当任务执行失败是，是否5分钟后重试，否则直接等待下一次执行任务
+    # 当任务执行失败时，是否5分钟后重试，否则直接等待下一次执行任务
     FAIL_RETRY = true
     [BACKEND]
     # 后端API配置
