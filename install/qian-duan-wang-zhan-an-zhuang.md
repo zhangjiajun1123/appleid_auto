@@ -25,6 +25,8 @@
     ENABLE_PROXY_POOL = false
     # 当后端报告代理不可用时，是否自动禁用该代理
     PROXY_AUTO_DISABLE = false
+    # 当任务执行失败是，是否5分钟后重试，否则直接等待下一次执行任务
+    FAIL_RETRY = true
     [BACKEND]
     # 后端API配置
     # 通过后端API可实现在前端控制解锁任务，做到实时更新，并允许用户触发解锁
@@ -66,5 +68,6 @@
     }
     ```
 5. 手动导入数据库文件 (`sql/db.sql`)
-6. 登录网站，默认管理员账户：`admin` 密码：`admin`\
-   ``此时请先不要添加账号，完成[后端安装](hou-duan-cheng-xu-an-zhuang.md)后再添加
+6. 在网站根目录下执行指令，创建管理员账户\
+   `php think register 用户名 密码`
+7. 登录网站，此时请先不要添加账号，完成[后端安装](hou-duan-cheng-xu-an-zhuang.md)后再添加

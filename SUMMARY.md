@@ -19,4 +19,4 @@
 
 ## API文档 <a href="#api" id="api"></a>
 
-* [等待添加……](api/deng-dai-tian-jia.md)
+* [分享页API](api/fen-xiang-ye-api.md)
