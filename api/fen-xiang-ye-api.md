@@ -1,18 +1,20 @@
 # 分享页API
 
-简短备注支持通过分享页面链接，以JSON方式获取账号信息，用于对接其他APP。
+支持通过分享页面代码，以JSON方式获取账号信息，用于对接其他APP。
 
-分享页面链接指页面的代码，并非整个URL。
+分享页面代码指页面的代码，并非整个URL。
 
-API地址：`/shareapi/<link>/[password]`\
-请求方法：`GET`\
+API地址：`/shareapi/<code>/[password]`\
+请求方法：`GET`
+
+例子：如果您的普通分享页面路径是 `/share/kfcv50`，密码设置为`crazy4`，那么这个页面对应的API地址路径就是 `/shareapi/kfcv50/crazy4` 。\
 
 
 ### 输入参数
 
 | 参数       | 值/类型   | 说明                |
 | -------- | ------ | ----------------- |
-| link     | String | 分享页代码             |
+| code     | String | 分享页代码             |
 | password | String | 分享页密码（若未设置密码则不需要） |
 
 ### 返回参数

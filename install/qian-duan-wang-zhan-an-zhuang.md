@@ -5,8 +5,8 @@
 
 
 1. 从[Release](https://github.com/pplulee/appleid\_auto/releases)下载网页源码并解压
-2.  将配置文件`.example.env`重命名为`.env`，并填写设置项\
-    有关后端API请参阅[后端接口介绍](../intro/hou-duan-jie-kou-jie-shao.md)\
+2.  将配置文件`.example.env`复制一份，名字改为`.env`，并填写设置项\
+    有关后端API请参阅[后端API介绍](../intro/hou-duan-api-jie-shao.md)\
 
 
     ```
@@ -63,7 +63,7 @@
     }
     location / {
         if (!-e $request_filename){
-            ^(.*)$  /index.php?s=$1  last;   break;
+            rewrite  ^(.*)$  /index.php?s=$1  last;   break;
         }
     }
     ```

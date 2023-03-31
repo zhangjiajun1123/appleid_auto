@@ -10,8 +10,7 @@ Python版本：3.7+ 需要安装pip。
 
 ### Selenium
 
-后端执行任务需要调用Webdriver。\
-如需在ARM设备上使用，请参阅[seleniarm/standalone-chromium](https://hub.docker.com/r/seleniarm/standalone-chromium)
+后端执行任务需要调用Webdriver，有两种部署方式：单机节点和集群。
 
 #### 单机节点（standalone）
 
@@ -26,11 +25,13 @@ SE\_VNC\_VIEW\_ONLY=1  表示VNC仅允许查看，不允许操作。\
 SE\_NODE\_MAX\_SESSIONS=10  表示最多允许10个会话数。\
 4444端口用于执行任务和面板，5900端口用于VNC。
 
+如需在ARM设备上使用，请参阅[seleniarm/standalone-chromium](https://hub.docker.com/r/seleniarm/standalone-chromium)
+
 #### 集群（grid）
 
 Selenium Grid需要一个中心控制器（Hub），并允许在多台服务器上部署节点（Node）。Hub收到请求后会自动分配Node，实现负载均衡，多IP访问等功能。
 
-快速部署脚本请参考[sahuidhsu/selenium-grid-docker](https://github.com/sahuidhsu/selenium-grid-docker)
+快速部署脚本请参考[sahuidhsu/selenium-grid-docker](https://github.com/sahuidhsu/selenium-grid-docker) (这个脚本提供x86\_64和arm部署支持)
 
 ## 一键部署后端
 
@@ -39,7 +40,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/pplulee/appleid_auto/backend/b
 ```
 
 安装时按照提示输入参数即可。\
-默认服务名为**appleauto。**\
-****部署完成后可查看服务日志。\
-**请自行寻找关于如何启停Linux服务，查询服务日志的资料。**
+默认会以**appleauto**为服务名部署一个systemctl的服务。\
+****部署完成后可通过**systemctl status appleauto**查看服务状态。
+
+使用**journalctl -u appleauto**可以查看日志，筛选日志的方法请自行搜索。
 

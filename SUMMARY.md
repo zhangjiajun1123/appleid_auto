@@ -3,7 +3,7 @@
 ## 简介 <a href="#intro" id="intro"></a>
 
 * [项目介绍](README.md)
-* [后端接口介绍](intro/hou-duan-jie-kou-jie-shao.md)
+* [后端API介绍](intro/hou-duan-api-jie-shao.md)
 * [后端文件说明](intro/hou-duan-wen-jian-shuo-ming.md)
 * [架构](intro/jia-gou.md)
 
