@@ -45,8 +45,14 @@
     USERNAME = root
     PASSWORD = 123456
     HOSTPORT = 3306
+
+    [APP]
+    # 时区设置
+    DEFAULT_TIMEZONE = Asia/Shanghai
     ```
-3.  前往网站根目录，执行以下指令\
+3. 前往PHP设置，删除对putenv函数的禁用\
+   对于宝塔用户，请前往`软件商店`->`对应PHP的设置`->`禁用函数`->`删除'putenv'`
+4.  前往网站根目录，执行以下指令\
 
 
     ```bash
@@ -54,7 +60,7 @@
     php composer.phar
     php composer.phar install
     ```
-4.  设置网站运行目录为`/public`，并设置伪静态为\
+5.  设置网站运行目录为`/public`，并设置伪静态为\
 
 
     ```nginx
@@ -67,7 +73,7 @@
         }
     }
     ```
-5. 手动导入数据库文件 (`sql/db.sql`)
-6. 在网站根目录下执行指令，创建管理员账户\
+6. 手动导入数据库文件 (`sql/db.sql`)
+7. 在网站根目录下执行指令，创建管理员账户\
    `php think register 用户名 密码`
-7. 登录网站，此时请先不要添加账号，完成[后端安装](hou-duan-cheng-xu-an-zhuang.md)后再添加
+8. 登录网站，此时请先不要添加账号，完成[后端安装](hou-duan-cheng-xu-an-zhuang.md)后再添加
