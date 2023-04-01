@@ -14,6 +14,7 @@
 
 ## 更新程序 <a href="#upgrade" id="upgrade"></a>
 
+* [从v1.x升级](upgrade/cong-v1.x-sheng-ji.md)
 * [前端程序更新](upgrade/qian-duan-cheng-xu-geng-xin.md)
 * [后端程序更新](upgrade/hou-duan-cheng-xu-geng-xin.md)
 

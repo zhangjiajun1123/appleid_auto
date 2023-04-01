@@ -73,7 +73,7 @@
         }
     }
     ```
-6. 手动导入数据库文件 (`sql/db.sql`)
+6. 手动导入数据库文件 (`db/db.sql`)
 7. 在网站根目录下执行指令，创建管理员账户\
    `php think register 用户名 密码`
 8. 登录网站，此时请先不要添加账号，完成[后端安装](hou-duan-cheng-xu-an-zhuang.md)后再添加
