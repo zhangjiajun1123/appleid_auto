@@ -6,7 +6,8 @@
    `systemctl stop appleauto`\
    \
    删除所有任务容器\
-   `docker stop $(docker ps -a | grep "apple-auto_*" | awk 'print $1') && docker rm $(docker ps -a | grep "apple-auto_*" | awk 'print $1')`
+   `docker stop $(docker ps -a | grep "apple-auto*" | awk '{print $1}')`\
+   `docker rm $(docker ps -a | grep "apple-auto*" | awk '{print $1}')`
 2. 删除前端网站的所有文件
 3. 参考[前端网站安装](../install/qian-duan-wang-zhan-an-zhuang.md)的1\~5步
 4. 导入`db/update/v2.0.sql`，无需导入初始数据库
