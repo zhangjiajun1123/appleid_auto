@@ -4,7 +4,7 @@
 
 
 
-1. 从[Release](https://github.com/pplulee/appleid\_auto/releases)下载网页源码并解压
+1. 前往[Release](https://github.com/pplulee/appleid\_auto/releases)从最新版本下载网页源码（Source code）并解压
 2.  将配置文件`.example.env`复制一份，名字改为`.env`，并填写设置项\
     有关后端API请参阅[后端API介绍](../intro/hou-duan-api-jie-shao.md)\
 
